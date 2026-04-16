@@ -5,7 +5,7 @@ export type FormType =
     | "semi_integrated"
     | string;
 
-export type TransmissionType = "automatic" | "manual";
+export type TransmissionType = "automatic" | "manual" | string;
 
 export type EngineType =
     | "diesel"
@@ -33,20 +33,15 @@ export interface CamperCard {
     price: number;
     rating: number;
     location: string;
-
     form: FormType;
-
     length: string;
     width: string;
     height: string;
     tank: string;
     consumption: string;
-
     transmission: TransmissionType;
     engine: EngineType;
-
     amenities: Amenity[];
-
     coverImage: string;
     totalReviews: number;
 };
@@ -57,25 +52,18 @@ export interface CamperDetails {
     price: number;
     rating: number;
     totalReviews: number;
-
     location: string;
     description: string;
-
     form: FormType;
-
     length: string;
     width: string;
     height: string;
     tank: string;
     consumption: string;
-
     transmission: TransmissionType;
     engine: EngineType;
-
     amenities: Amenity;
-
     gallery: GalleryItem[];
-
     createdAt: string;
     updatedAt: string;
 };

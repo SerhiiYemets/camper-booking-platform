@@ -2,9 +2,14 @@
 
 import { useCampers } from "@/hooks/useCampers";
 import css from "./CatalogPage.module.css";
+import { useState } from "react";
+import Filters from "@/components/Filters/Filters";
+import { CamperFilters } from "@/types/filters";
+import CamperCard from "@/components/CamperCard/CamperCard";
 
 export default function CatalogPage() {
-    const filters = {};
+
+    const [filters, setFilters] = useState<CamperFilters>({});
 
     const {
         data,
@@ -21,28 +26,23 @@ export default function CatalogPage() {
     }
 
     return (
-        <section className={css.section}>
-        <h1 className={css.title}>Catalog</h1>
+        <section className={css.container}>
+            <div className={css.sidebar}>
+                <Filters filters={filters} setFilters={setFilters} />
+            </div>
+            <div className={css.content}>
+                <ul className={css.list}>
+                {campers.map((camper) => (
+                    <CamperCard key={camper.id} camper={camper} />
+                ))}
+                </ul>
 
-        <ul className={css.list}>
-            {campers.map((camper) => (
-            <li key={camper.id} className={css.card}>
-                <span>{camper.name}</span>
-                <span>€{camper.price}</span>
-            </li>
-            ))}
-        </ul>
-
-        {/* 🔥 Load More прямо здесь */}
-        {hasNextPage && (
-            <button
-            className={css.button}
-            onClick={() => fetchNextPage()}
-            disabled={isFetchingNextPage}
-            >
-            {isFetchingNextPage ? "Loading..." : "Load More"}
-            </button>
-        )}
+                {hasNextPage && (
+                <button className={css.button} onClick={() => fetchNextPage()}>
+                    {isFetchingNextPage ? "Loading..." : "Load More"}
+                </button>
+                )}
+            </div>
         </section>
     );
 }
