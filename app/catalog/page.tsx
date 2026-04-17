@@ -45,4 +45,6 @@ export default function CatalogPage() {
             </div>
         </section>
     );
-}
+};
+
+

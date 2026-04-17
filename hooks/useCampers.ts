@@ -3,10 +3,11 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { fetchCampers } from "@/lib/fetchCampers";
 import { CamperFilters } from "@/types/filters";
+import { queryKeys } from "@/lib/queryKeys";
 
 export const useCampers = (filters: CamperFilters) => {
     return useInfiniteQuery({
-        queryKey: ["campers", filters],
+        queryKey: queryKeys.campers(filters),
 
         queryFn: ({ pageParam = 1 }) =>
         fetchCampers({

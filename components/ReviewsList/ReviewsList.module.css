@@ -1,0 +1,52 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 13px;
+    color: #555;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #ccc;
+}
+
+.activeStar {
+    color: #f5a623;
+}

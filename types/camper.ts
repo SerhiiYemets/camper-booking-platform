@@ -1,3 +1,5 @@
+import { Review } from "./review";
+
 export type FormType =
     | "alcove"
     | "panel_van"
@@ -62,10 +64,11 @@ export interface CamperDetails {
     consumption: string;
     transmission: TransmissionType;
     engine: EngineType;
-    amenities: Amenity;
+    amenities: Amenity[];
     gallery: GalleryItem[];
     createdAt: string;
     updatedAt: string;
+    reviews?: Review[];
 };
 
 export interface GalleryItem {

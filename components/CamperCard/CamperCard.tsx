@@ -2,6 +2,7 @@
 
 import { CamperCard as CamperType } from "@/types/camper";
 import css from "./CamperCard.module.css";
+import Link from "next/link";
 
 type Props = {
     camper: CamperType;
@@ -36,7 +37,9 @@ export default function CamperCard({ camper }: Props) {
                     <span>{camper.form}</span>
                 </div>
 
-                <button className={css.button}>Show more</button>
+                <Link href={`/catalog/${camper.id}`} target="_blank" rel="noopener noreferrer">
+                    <button className={css.button}>Show more</button>
+                </Link>
             </div>
         </li>
     );
