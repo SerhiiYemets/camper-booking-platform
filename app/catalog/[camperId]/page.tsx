@@ -25,9 +25,7 @@ export default function CamperDetailsPage() {
 
   return (
     <section className={css.container}>
-      {/* TOP BLOCK */}
       <div className={css.top}>
-        {/* GALLERY */}
         <div className={css.gallery}>
           <img
             src={camper.gallery[active]?.original}
@@ -51,9 +49,7 @@ export default function CamperDetailsPage() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className={css.right}>
-          {/* CARD 1 */}
           <div className={css.detailsCard}>
             <h1 className={css.title}>{camper.name}</h1>
 
@@ -67,7 +63,6 @@ export default function CamperDetailsPage() {
             <p className={css.description}>{camper.description}</p>
           </div>
 
-          {/* CARD 2 */}
           <div className={css.detailsCard}>
             <h2 className={css.subtitle}>Vehicle details</h2>
 
@@ -109,7 +104,6 @@ export default function CamperDetailsPage() {
         </div>
       </div>
 
-      {/* BOTTOM BLOCK */}
       <div className={css.bottom}>
         <div className={css.reviews}>
           <h2>Reviews</h2>
