@@ -1,7 +1,14 @@
-const BASE_URL = "https://campers-api.goit.study";
-
-export async function apiFetch<T>(url: string): Promise<T> {
-    const res = await fetch(`${BASE_URL}${url}`);
+export async function apiFetch<T>(
+    url: string,
+    options: RequestInit = {}
+): Promise<T> {
+    const res = await fetch(`https://campers-api.goit.study${url}`, {
+        headers: {
+        "Content-Type": "application/json",
+        ...options.headers,
+        },
+        ...options,
+    });
 
     if (!res.ok) {
         throw new Error("API error");
