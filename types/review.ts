@@ -7,4 +7,3 @@ export interface Review {
     createdAt: string;
 };
 
-

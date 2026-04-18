@@ -7,3 +7,10 @@ body {
   margin: 0;
   background-color: #ffffff;
 }
+
+:root {
+  --inputs: #f7f7f7;
+  --gray-light: #dadde1;
+  --main: #101828;
+  --grey-green: #6c8f7a;
+}

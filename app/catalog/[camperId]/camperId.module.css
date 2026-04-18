@@ -1,154 +1,151 @@
 .container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 32px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 32px;
 }
 
 .top {
-  display: grid;
-  grid-template-columns: 638px 325px;
-  gap: 32px;
-  align-items: start;
-  margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 638px 325px;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 36px;
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
 }
 
 .mainImage {
-  width: 638px;
-  height: 548px;
-  object-fit: cover;
-  border-radius: 16px;
+    width: 638px;
+    height: 548px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .thumbs {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .thumbs img {
-  width: 136px;
-  height: 144px;
-  object-fit: cover;
-  border-radius: 16.61px;
-  cursor: pointer;
-
+    width: 136px;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 16.61px;
+    cursor: pointer;
 }
 
 .right {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .detailsCard {
-  background: #f7f7f7;
-  padding: 24px;
-  border-radius: 16px;
-  width: 650px;
-  height: 304px;
+    background: #f7f7f7;
+    padding: 24px;
+    border-radius: 16px;
+    width: 650px;
+    height: 304px;
 }
 
 .title {
-  margin-bottom: 8px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.33;
-  color: #101828;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #101828;
 }
 
 .meta {
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #475467;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #475467;
 }
 
 .price {
-  margin-bottom: 24px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.33;
-  color: #101828;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #101828;
 }
 
 .description {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #475467;
-  margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #475467;
+    margin: 0;
 }
 
 .subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
 .features span {
-  background: #ffffff;
-  border: 1px solid #dadde1;
-  padding: 8px 12px;
-  border-radius: 100px;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #101828;
+    background: #ffffff;
+    border: 1px solid #dadde1;
+    padding: 8px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #101828;
 }
 
 .divider {
-  height: 1px;
-  background: #dadde1;
-  margin: 16px 0;
+    height: 1px;
+    background: #dadde1;
+    margin: 16px 0;
 }
 
 .specs {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .specs div {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #101828;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #101828;
 }
 
-/* Bottom mirrors top grid exactly */
 .bottom {
-  display: grid;
-  grid-template-columns: 638px 525px;
-  gap: 32px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 638px 525px;
+    gap: 32px;
+    align-items: start;
 }
 
 .reviews {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .form {
-  width: 698px;
-  margin-top: 92px;
-  
+    width: 698px;
+    margin-top: 92px;
 }
 
 .status {
-  padding: 80px 0;
-  text-align: center;
+    padding: 80px 0;
+    text-align: center;
 }
+
