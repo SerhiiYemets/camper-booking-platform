@@ -4,12 +4,16 @@ import { useParams } from "next/navigation";
 import { useCamper } from "@/hooks/useCamper";
 import ReviewsList from "@/components/ReviewsList/ReviewsList";
 import css from "./camperId.module.css";
+import { useReviews } from "@/hooks/useReviews";
+
 
 export default function CamperDetailsPage() {
   const params = useParams();
   const camperId = params.camperId as string;
 
   const { data: camper, isLoading, isError } = useCamper(camperId);
+  
+  const { data: reviews } = useReviews(camperId);
 
   if (isLoading) return <p className={css.status}>Loading...</p>;
   if (isError || !camper) return <p className={css.status}>Error</p>;
@@ -46,11 +50,11 @@ export default function CamperDetailsPage() {
       <div className={css.bottom}>
         <div className={css.reviews}>
           <h2>Reviews</h2>
-          <ReviewsList reviews={camper.reviews || []} />
+            <ReviewsList reviews={reviews || []} />
         </div>
 
         <div className={css.form}>
-          {/* позже тут будет форма */}
+          {/* форма */}
         </div>
       </div>
     </section>

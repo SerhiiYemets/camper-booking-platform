@@ -5,6 +5,7 @@ import { fetchCampers } from "@/lib/fetchCampers";
 import { CamperFilters } from "@/types/filters";
 import { queryKeys } from "@/lib/queryKeys";
 
+
 export const useCampers = (filters: CamperFilters) => {
     return useInfiniteQuery({
         queryKey: queryKeys.campers(filters),
