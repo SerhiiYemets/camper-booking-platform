@@ -64,7 +64,7 @@ export default function CamperCard({ camper }: Props) {
                         />
                         {camper.form}
                     </span>
-                </div>
+                    </div>
 
                 <Link href={`/catalog/${camper.id}`} target="_blank" rel="noopener noreferrer">
                     <button className={css.button}>Show more</button>

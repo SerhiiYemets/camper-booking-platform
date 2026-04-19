@@ -29,7 +29,7 @@ export default function BookingForm({ camperId } : Props) {
                 }
             );
 
-            if(!res.ok) throw new Error();
+            if(!res.ok) throw new Error("Booking failed");
 
             alert ("Booking successful ✅");
 
@@ -71,3 +71,4 @@ export default function BookingForm({ camperId } : Props) {
         </form>
     );
 }
+
