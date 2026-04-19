@@ -43,3 +43,40 @@ Users can browse available campers, filter them, view detailed information, and 
 - **React Icons**
 - **Vercel** (deployment)
 
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SerhiiYemets/camper-booking-platform.git
+cd camper-booking-platform
+
+---
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+---
+
+🌐 API
+
+The project uses the provided backend:
+https://campers-api.goit.study
+
+---
+
+👤 Author
+
+Serhii Yemets
+
+GitHub: https://github.com/SerhiiYemets
+Telegram: https://t.me/Serhii_Yemets
+LinkedIn: https://www.linkedin.com/in/serhii-yemets/
+Email: serhiiyemets2020@gmail.com
