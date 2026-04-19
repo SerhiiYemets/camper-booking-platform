@@ -14,3 +14,7 @@ body {
   --main: #101828;
   --grey-green: #6c8f7a;
 }
+
+h3 {
+  margin: 0;
+}

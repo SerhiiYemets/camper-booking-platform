@@ -45,3 +45,5 @@ export default function Icon({ id, size = 18, width, height, className, color = 
         </svg>
     );
 }
+
+

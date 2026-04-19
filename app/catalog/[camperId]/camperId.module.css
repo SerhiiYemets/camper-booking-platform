@@ -34,7 +34,7 @@
     width: 136px;
     height: 144px;
     object-fit: cover;
-    border-radius: 16.61px;
+    border-radius: 16px;
     cursor: pointer;
 }
 
@@ -52,33 +52,34 @@
     height: 304px;
 }
 
-.title {
-    margin-bottom: 8px;
+.title,
+.price {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.33;
     color: #101828;
 }
 
-.meta {
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #475467;
+.title {
+    margin-bottom: 8px;
 }
 
 .price {
     margin-bottom: 24px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.33;
-    color: #101828;
 }
 
+.meta,
 .description {
     font-size: 16px;
     line-height: 1.5;
     color: #475467;
+}
+
+.meta {
+    margin-bottom: 16px;
+}
+
+.description {
     margin: 0;
 }
 
@@ -96,7 +97,7 @@
 }
 
 .features span {
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #dadde1;
     padding: 8px 12px;
     border-radius: 100px;

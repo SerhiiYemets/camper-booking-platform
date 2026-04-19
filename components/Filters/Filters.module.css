@@ -1,33 +1,52 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
 
 .title {
     font-size: 14px;
     font-weight: 600;
-    color: #6b7280;
+    color: #6c717b;
+}
+
+.filtersTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0 0;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .input {
-    padding: 10px 12px;
+    width: 250px;
+    height: 36px;
+    padding: 10px 12px 10px 36px; 
     border-radius: 12px;
     border: 1px solid #e6e8ec;
-    background: #f7f7f7;
+    background: #fff;
     font-size: 14px;
 }
 
 .group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .checkbox {
@@ -35,16 +54,15 @@
     align-items: center;
     gap: 10px;
     font-size: 14px;
-    color: #374151;
+    color: #17181a;
     cursor: pointer;
 }
 
 .checkbox input {
     appearance: none;
-
     width: 24px;
     height: 24px;
-    border: 2px solid #d1d5db;
+    border: 2px solid #6e6e6e;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -67,14 +85,16 @@
 
 .search {
     margin-top: 8px;
+    height: 52px;
     padding: 12px;
     border-radius: 999px;
     border: none;
     background: #6c8f7a;
-    color: white;
+    color: #fff;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.2s;
+    transition: background 0.2s;
 }
 
 .search:hover {
@@ -82,16 +102,24 @@
 }
 
 .clear {
-    padding: 12px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     border-radius: 999px;
     border: 1px solid #e6e8ec;
-    background: white;
+    background: #fff;
     cursor: pointer;
     transition: 0.2s;
+}
+
+.clearIcon {
+    width: 16px;
+    height: 16px;
 }
 
 .clear:hover {
     border-color: #6c8f7a;
     color: #6c8f7a;
 }
-

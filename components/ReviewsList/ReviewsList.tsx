@@ -2,6 +2,7 @@
 
 import { Review } from "@/types/review";
 import css from "./ReviewsList.module.css";
+import Icon from "../Icon/Icon";
 
 type Props = {
     reviews: Review[];
@@ -14,16 +15,19 @@ export default function ReviewsList({ reviews }: Props) {
 
 
     function Stars({ rating }: { rating: number }) {
-        return (
-            <div className={css.stars}>
+    const rounded = Math.round(rating);
+    return (
+        <div className={css.stars}>
             {Array.from({ length: 5 }).map((_, i) => (
-                <span key={i} className={i < rating ? css.activeStar : css.star}>
-                ⭐
-                </span>
+                <Icon
+                key={i}
+                id={i < rounded ? "star-filled" : "star-empty"}
+                className={i < rounded ? css.starActive : css.starEmpty}
+                />
             ))}
-            </div>
-        );
-        }
+        </div>
+    );
+}
     return (
         <div className={css.list}>
             {reviews.map((review) => (
@@ -38,8 +42,8 @@ export default function ReviewsList({ reviews }: Props) {
                             <Stars rating={review.reviewer_rating} />
                     </div>
                 </div>
-
-                    <p className={css.text}>{review.comment}</p>
+                
+                <p className={css.text}>{review.comment}</p>
                 </div>
             ))}
         </div>

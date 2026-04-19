@@ -3,6 +3,7 @@
 import { CamperCard as CamperType } from "@/types/camper";
 import css from "./CamperCard.module.css";
 import Link from "next/link";
+import Icon from "../Icon/Icon";
 
 type Props = {
     camper: CamperType;
@@ -24,7 +25,10 @@ export default function CamperCard({ camper }: Props) {
                 </div>
 
                 <p className={css.meta}>
-                    ⭐ {camper.rating} ({camper.totalReviews}) · {camper.location}
+                    ⭐ {camper.rating} ({camper.totalReviews} Reviews) {" "}
+                    
+                    <Icon id="map" className={css.metaIcon} />
+                    {camper.location}
                 </p>
 
                 <p className={css.description}>
@@ -32,9 +36,34 @@ export default function CamperCard({ camper }: Props) {
                 </p>
 
                 <div className={css.tags}>
-                    <span>{camper.engine}</span>
-                    <span>{camper.transmission}</span>
-                    <span>{camper.form}</span>
+                    <span className={css.tag}>
+                        <Icon id="gas-pump" className={css.tagIcon} />
+                        {camper.engine}
+                    </span>
+
+                    <span className={css.tag}>
+                        <Icon
+                        id={camper.transmission === "automatic" ? "automatic" : "manual"}
+                        className={css.tagIcon}
+                        />
+                        {camper.transmission}
+                    </span>
+
+                    <span className={css.tag}>
+                        <Icon
+                        id={
+                            camper.form === "panel_van"
+                            ? "van"
+                            : camper.form === "alcove"
+                            ? "van"
+                            : camper.form === "integrated"
+                            ? "van"
+                            : "van"
+                        }
+                        className={css.tagIcon}
+                        />
+                        {camper.form}
+                    </span>
                 </div>
 
                 <Link href={`/catalog/${camper.id}`} target="_blank" rel="noopener noreferrer">

@@ -40,13 +40,19 @@
 
 .stars {
     display: flex;
-    gap: 2px;
+    gap: 4px;
+    transform: translateY(-12px);
+    margin-bottom: 4px;
 }
 
-.star {
-    color: #ccc;
+.starActive {
+    width: 16px;
+    height: 16px;
+    color: #FFC531; 
 }
 
-.activeStar {
-    color: #f5a623;
+.starEmpty {
+    width: 16px;
+    height: 16px;
+    color: #DADDE1; 
 }

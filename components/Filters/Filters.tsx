@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { CamperFilters } from "@/types/filters";
 import css from "./Filters.module.css";
+import Icon from "../Icon/Icon";
+
 
 type Props = {
     filters: CamperFilters;
@@ -62,13 +64,20 @@ export default function Filters({ filters, setFilters }: Props) {
         <div className={css.wrapper}>
             <div className={css.section}>
                 <p className={css.title}>Location</p>
-                <input
-                    className={css.input}
-                    placeholder="Kyiv, Ukraine"
-                    value={localFilters.location || ""}
-                    onChange={(e) => handleLocation(e.target.value)}
-                />
+
+                <div className={css.inputWrapper}>
+                    <Icon id="map" className={css.icon} />
+
+                    <input
+                        className={css.input}
+                        placeholder="Kyiv, Ukraine"
+                        value={localFilters.location || ""}
+                        onChange={(e) => handleLocation(e.target.value)}
+                    />
+                </div>
             </div>
+
+            <p className={css.filtersTitle}>Filters</p>
 
             <div className={css.section}>
                 <p className={css.title}>Camper form</p>
@@ -128,6 +137,7 @@ export default function Filters({ filters, setFilters }: Props) {
             </button>
 
             <button className={css.clear} onClick={clearFilters}>
+                <Icon id="close" className={css.clearIcon} />
                 Clear filters
             </button>
         </div>
