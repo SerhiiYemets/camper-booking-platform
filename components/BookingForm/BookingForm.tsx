@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import css from "./BookingForm.module.css";
+import toast from "react-hot-toast";
 
 type Props = {
     camperId: string;
@@ -31,16 +32,16 @@ export default function BookingForm({ camperId } : Props) {
 
             if(!res.ok) throw new Error("Booking failed");
 
-            alert ("Booking successful ✅");
+            toast.success("Booking successful 🚐");
 
             setName("");
             setEmail("");
-        }   catch (error) {
-            alert("Error booking ❌");
-        }   finally {
-            setLoading(false);   
-        }
-    };
+            } catch (error) {
+            toast.error("Booking failed ❌");
+            } finally {
+            setLoading(false);
+            }
+        };
 
     return (
         <form className={css.form} onSubmit={handleSubmit}>
