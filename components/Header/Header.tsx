@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header className={css.header}>
         <div className={css.container}>
-            <Link href="/" className={css.logo}>
+            <Link href="/" className={css.logo} aria-label="Go to home page">
                 <Icon id="logo" width={136} height={16} />
             </Link>
 

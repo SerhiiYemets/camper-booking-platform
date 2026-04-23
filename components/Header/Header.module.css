@@ -30,14 +30,15 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    color: var(--main);
+    color: #101828;
     transition: color 0.2s ease;
 }
 
 .link:hover {
-    color: var(--grey-green);
+    color: #829b91;
 }
 
 .active {
-    color: var(--grey-green);
+    color: #829b91;
+    font-weight: 600; 
 }

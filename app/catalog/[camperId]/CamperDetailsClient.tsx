@@ -8,9 +8,9 @@ import BookingForm from "@/components/BookingForm/BookingForm";
 import css from "./camperId.module.css";
 
 export default function CamperDetailsClient({
-  camperId,
+    camperId,
 }: {
-  camperId: string;
+    camperId: string;
 }) {
     const { data: camper, isLoading, isError } = useCamper(camperId);
     const { data: reviews } = useReviews(camperId);
