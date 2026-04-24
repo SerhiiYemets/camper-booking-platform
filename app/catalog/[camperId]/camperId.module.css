@@ -150,3 +150,139 @@
     text-align: center;
 }
 
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 24px;
+    }
+
+    .top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 28px;
+    }
+
+    .mainImage {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 638 / 548; 
+    }
+
+    .thumbs img {
+        width: calc((100% - 90px) / 4); 
+        height: auto;
+        aspect-ratio: 136 / 144;
+    }
+
+    .detailsCard {
+        width: 94%;
+        height: auto;
+    }
+
+    .bottom {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .container {
+        padding: 16px;
+        overflow-x: hidden;
+    }
+
+    .top {
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .mainImage {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        border-radius: 12px;
+        display: block; 
+    }
+
+    .thumbs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .thumbs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .thumbs img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 12px;
+}
+
+    .detailsCard {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .title,
+    .price {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .meta,
+    .description {
+        font-size: 14px;
+    }
+
+    .features {
+        gap: 6px;
+        margin-bottom: 16px;
+    }
+
+    .features span {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .specs div {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .bottom {
+        gap: 16px;
+    }
+
+    .reviews {
+        gap: 16px;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+
+    .status {
+        padding: 48px 0;
+    }
+}
