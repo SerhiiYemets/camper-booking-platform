@@ -105,52 +105,6 @@
 @media (max-width: 640px) {
 
     .section {
-        padding: 24px;
-    }
-
-    .container {
-        gap: 16px;
-        padding: 16px;
-    }
-
-    .sidebar {
-        padding: 16px;
-        border-radius: 12px;
-        width: 188%;
-    }
-
-    .list {
-        gap: 16px;
-    }
-
-    .button {
-        width: 100%;
-        margin-top: 24px;
-    }
-
-    .status {
-        margin-top: 24px;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .card {
-        gap: 16px;
-    }
-
-    .image {
-        width: 220px;
-        flex-shrink: 0;
-        height: auto;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    }
-}
-
-    @media (max-width: 640px) {
-
-    .section {
         padding: 24px 0;
     }
 
@@ -162,59 +116,16 @@
     .sidebar {
         padding: 16px;
         border-radius: 12px;
+        width: 185%;
     }
 
     .list {
         gap: 16px;
     }
 
-    .card {
-        display: flex;
-        flex-direction: column !important;
-        gap: 12px;
-        padding: 14px;
-        border-radius: 16px;
-    }
-
-    .image {
-        width: 100% !important;
-        height: 200px;
-        border-radius: 12px;
-    }
-
-    .info {
-        width: 100%;
-        gap: 8px;
-    }
-
-    .header {
-        flex-wrap: wrap;
-    }
-
-    .header h3 {
-        font-size: 16px;
-    }
-
-    .price {
-        font-size: 16px;
-    }
-
-    .meta {
-        font-size: 13px;
-    }
-
-    .description {
-        font-size: 13px;
-    }
-
-    .tag {
-        font-size: 11px;
-        padding: 4px 8px;
-    }
-
     .button {
         width: 100%;
-        text-align: center;
+        margin-top: 24px;
     }
 
     .status {

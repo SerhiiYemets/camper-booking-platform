@@ -4,24 +4,22 @@
 }
 
 .container {
-    position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 64px;
+    padding: 0 64px;
     height: 72px;
     display: flex;
     align-items: center;
+    justify-content: space-between; 
 }
 
 .logo {
-    text-decoration: none;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
+
 .nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 32px;
 }
@@ -40,5 +38,38 @@
 
 .active {
     color: #829b91;
-    font-weight: 600; 
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .nav {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        background: var(--inputs);
+        border-bottom: 1px solid var(--gray-light);
+        width: 100%;
+    }
+
+
+    .container {
+        padding: 0 16px;
+        height: 64px;
+        width: 165%;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
 }
