@@ -150,8 +150,6 @@
     text-align: center;
 }
 
-/* ===================== TABLET ===================== */
-
 @media (max-width: 1024px) {
 
     .container {
@@ -177,7 +175,7 @@
     }
 
     .detailsCard {
-        width: 100%; /* 🔥 фикс */
+        width: 100%; 
         height: auto;
     }
 
@@ -191,8 +189,6 @@
         margin-top: 0;
     }
 }
-
-/* ===================== MOBILE ===================== */
 
 @media (max-width: 900px) {
 

@@ -7,7 +7,6 @@
     background: #f7f7f7;
 }
 
-
 .image {
     width: 219px;
     height: 240px;
@@ -52,7 +51,6 @@
 }
 
 .tags {
-    display: flex;
     gap: 8px; 
 }
 
@@ -67,6 +65,7 @@
     background: #f2f4f7;
     border-radius: 20px;
     font-size: 14px;
+    margin: 8px;
 }
 
 .button {
