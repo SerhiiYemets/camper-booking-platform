@@ -150,6 +150,8 @@
     text-align: center;
 }
 
+/* ===================== TABLET ===================== */
+
 @media (max-width: 1024px) {
 
     .container {
@@ -165,17 +167,17 @@
     .mainImage {
         width: 100%;
         height: auto;
-        aspect-ratio: 638 / 548; 
+        aspect-ratio: 638 / 548;
     }
 
     .thumbs img {
-        width: calc((100% - 90px) / 4); 
+        width: calc((100% - 90px) / 4);
         height: auto;
         aspect-ratio: 136 / 144;
     }
 
     .detailsCard {
-        width: 94%;
+        width: 100%; /* 🔥 фикс */
         height: auto;
     }
 
@@ -190,11 +192,12 @@
     }
 }
 
-@media (max-width: 640px) {
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 900px) {
 
     .container {
         padding: 16px;
-        overflow-x: hidden;
     }
 
     .top {
@@ -212,7 +215,7 @@
         height: auto;
         min-height: 200px;
         border-radius: 12px;
-        display: block; 
+        display: block;
     }
 
     .thumbs {
@@ -220,17 +223,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
-    
-    .thumbs::-webkit-scrollbar {
-        display: none;
-    }
 
     .thumbs img {
         width: 100%;
         height: 120px;
         object-fit: cover;
         border-radius: 12px;
-}
+    }
 
     .detailsCard {
         width: 100%;
